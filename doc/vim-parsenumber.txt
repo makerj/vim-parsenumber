@@ -1,0 +1,7 @@
+*vim-parsenumber.txt*      vim-parsenumber
+
+vim-parsenumber converts the numbers under the current cursor to various units.
+
+if you want parse under the curernt cursor, just enter :ParseNUmber
+in normal mode
+
