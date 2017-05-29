@@ -14,11 +14,21 @@ function! s:ParseNumber()
 python << EOF
 import vim
 
+def format_binary(number):
+	b = str(bin(number))[2:]
+	indexes = []
+	for i, v in enumerate(b[::-1]):
+		if v == '1':
+			indexes.append(i)
+	indexes.reverse()
+	return b + ' ' + str(indexes)
+
 def parsenumber(s):
 	try:
 		print("Converting '%s'" % s)
 		print('----------')
 		n = int(s, 0)
+		print('Bin         %s' % format_binary(n))
 		print('Dec         %d' % n)
 		print('Hex         %X' % n)
 		print('Bytes       %d' % n)
