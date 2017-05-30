@@ -30,6 +30,6 @@ Plugin 'makerj/vim-parsenumber'
 Parse under the curernt cursor
 
 ```
-:ParseNUmber
+:ParseNumber
 ```
 
