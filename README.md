@@ -1,5 +1,6 @@
 # vim-parsenumber
 
+![demo](demo.gif)
 **vim-parsenumber** converts the numbers under the current cursor to various units.
 
 ## Prerequisite
